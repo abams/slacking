@@ -1,10 +1,10 @@
 # SlackProfiles
 
-A small Ruby CLI to post to slack with different profiles
+A small Ruby CLI to post to slack with different profiles (impersonating other users, i.e. Tim Lincecum)
 
 ## Execution
 
-Clone this repo
+Clone this repo,
 cd into the directory
 
 `ruby lib/profiles.rb`
