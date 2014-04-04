@@ -133,7 +133,7 @@ class Profiles
   def display_help
     puts "Type [username] --image to change the profile's image"
     puts "Type [username] --channel to change the slack channel this profile will post to"
-    puts "Type 'profiles' to view a list of your profiles"
+    # puts "Type 'profiles' to view a list of your profiles"
   end
 
   def get_slack_token
