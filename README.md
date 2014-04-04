@@ -1,24 +1,13 @@
 # SlackProfiles
 
-TODO: Write a gem description
+A small Ruby CLI to post to slack with different profiles
 
-## Installation
+## Execution
 
-Add this line to your application's Gemfile:
+Clone this repo
+cd into the directory
 
-    gem 'slack_profiles'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install slack_profiles
-
-## Usage
-
-TODO: Write usage instructions here
+`ruby lib/profiles.rb`
 
 ## Contributing
 
