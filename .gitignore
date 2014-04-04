@@ -18,3 +18,4 @@ tmp
 lib/config
 lib/profiles
 *.DS_Store
+lib/user_profiles

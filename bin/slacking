@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+begin
+  require 'slacking'
+rescue LoadError
+  executable = File.symlink?(__FILE__) ? File.readlink(__FILE__) : __FILE__
+  $:.unshift File.join(File.dirname(executable), '..', 'lib')
+  require 'slacking'
+end
+
+Slacking.run
