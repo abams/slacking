@@ -14,13 +14,14 @@ module Slacking
 
     def run
       @token = get_slack_token
+      @organization = get_slack_organization
       listen
     end
 
     protected
 
     def client
-      @client ||= Slacking::HttpClient.new(@token)
+      @client ||= Slacking::HttpClient.new(@token, @organization)
     end
 
     private

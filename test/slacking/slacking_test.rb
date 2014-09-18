@@ -10,7 +10,7 @@ class SlackingTest < Minitest::Test
   end
 
   def test_profile
-    stub_request(:post, "https://byliner.slack.com/services/hooks/incoming-webhook?token=xhibit").
+    stub_request(:post, "https://xhibit.slack.com/services/hooks/incoming-webhook?token=xhibit").
       with(:body => "{\"text\":\"message\",\"channel\":\"#xhibit\",\"icon_url\":\"xhibit\",\"username\":\"xhibit\"}",
            :headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Content-Type'=>'application/json', 'User-Agent'=>'Ruby'}).
       to_return(:status => 200, :body => "", :headers => {})

@@ -9,8 +9,9 @@ module Slacking
     include IO
     include Config
 
-    def initialize(token)
+    def initialize(token, organization)
       @token = token
+      @organization = organization
     end
 
     def post_to_slack(profile)
@@ -54,7 +55,7 @@ module Slacking
     end
 
     def slack_url
-      "https://byliner.slack.com/services/hooks/incoming-webhook?token=#{@token}"
+      "https://#{@organization}.slack.com/services/hooks/incoming-webhook?token=#{@token}"
     end
   end
 end
