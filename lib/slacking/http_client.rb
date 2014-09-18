@@ -48,7 +48,9 @@ module Slacking
 
     def handle_response(response)
       if response.body == 'No hooks'
-        @token = get_slack_token('w+')
+        config = get_slack_config('w+')
+        @token = config[:token]
+        @organization = config[:organization]
       else
         puts response.body
       end

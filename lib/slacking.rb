@@ -13,8 +13,9 @@ module Slacking
     include Help
 
     def run
-      @token = get_slack_token
-      @organization = get_slack_organization
+      config = get_slack_config
+      @token = config[:token]
+      @organization = config[:organization]
       listen
     end
 
